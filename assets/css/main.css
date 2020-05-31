@@ -1,0 +1,437 @@
+/*------------------------------------------------------------------------------
+  Template Name: MDBootstrap
+-------------------------------------------------------------------------------*/
+/* Default Css */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,700|Work+Sans:400,500,600,700,800&display=swap");
+body {
+  color: #243f4d;
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Shadow and Outline */
+a {
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+a:active, a:hover {
+  text-decoration: none;
+}
+
+button,
+.btn {
+  outline: none;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+button:active, button:hover, button:focus,
+.btn:active,
+.btn:hover,
+.btn:focus {
+  outline: 0;
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  color: #333333;
+  background-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+  color: #fff;
+}
+
+/* Heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+hr {
+  margin: 20px 0;
+  border-color: #352323;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ol ol ol {
+  list-style: lower-roman;
+}
+
+ol ol {
+  list-style: lower-alpha;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Form */
+label {
+  color: #243f4d;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+*::-moz-selection {
+  background: #f26522;
+  color: #fff;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #f26522;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #f26522;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* Placeholder */
+*::-moz-placeholder {
+  color: #243f4d;
+  font-size: 16px;
+  opacity: 1;
+}
+
+*::placeholder {
+  color: #243f4d;
+  font-size: 16px;
+  opacity: 1;
+}
+
+/* Button */
+.btn {
+  padding: 15px 30px;
+  box-shadow: none;
+  font-size: 16px;
+  border-radius: 0;
+}
+
+.btn-theme {
+  color: #fff;
+  border-color: #f26522;
+  background: #f26522;
+}
+.btn-theme:hover {
+  background: #f26522;
+  color: #fff;
+  border-color: #f26522;
+}
+
+.btn-rounded {
+  border-radius: 100% !important;
+}
+
+.btn-square {
+  border-radius: 0 !important;
+}
+
+/* Bg Color */
+.bg-white {
+  background: #fff;
+}
+
+.bg-black {
+  background: #000;
+}
+
+.bg-theme {
+  background: #f26522;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.bg-blue {
+  background-color: #007bff !important;
+}
+
+.bg-indigo {
+  background-color: #6610f2 !important;
+}
+
+.bg-purple {
+  background-color: #6f42c1 !important;
+}
+
+.bg-pink {
+  background-color: #e83e8c !important;
+}
+
+.bg-red {
+  background-color: #dc3545 !important;
+}
+
+.bg-orange {
+  background-color: #fd7e14 !important;
+}
+
+.bg-green {
+  background-color: #28a745 !important;
+}
+
+.bg-teal {
+  background-color: #20c997 !important;
+}
+
+.bg-cyan {
+  background-color: #17a2b8 !important;
+}
+
+/* Text Color */
+.color-white {
+  color: #fff;
+}
+
+.color-black {
+  color: #000;
+}
+
+.color-theme {
+  color: #f26522;
+}
+
+.color-dark {
+  color: #343a40 !important;
+}
+
+.color-blue {
+  color: #007bff !important;
+}
+
+.color-indigo {
+  color: #6610f2 !important;
+}
+
+.color-purple {
+  color: #6f42c1 !important;
+}
+
+.color-pink {
+  color: #e83e8c !important;
+}
+
+.color-red {
+  color: #dc3545 !important;
+}
+
+.color-orange {
+  color: #fd7e14 !important;
+}
+
+.color-green {
+  color: #28a745 !important;
+}
+
+.color-teal {
+  color: #20c997 !important;
+}
+
+.color-cyan {
+  color: #17a2b8 !important;
+}
+
+/* Others Common Css Here :) */
+#scrollUp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #f26522;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 16px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 700;
+  opacity: 0.6;
+  cursor: pointer;
+  z-index: 9999;
+}
+#scrollUp:hover {
+  opacity: 1;
+}
+
+.table-row {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.bg-fix {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.separator {
+  border-top: 1px solid #f2f2f2;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  display: none;
+}
+
+/* Overlay */
+[data-overlay] {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+[data-overlay]::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+}
+
+[data-overlay=light]::before {
+  background-color: #fff;
+}
+
+[data-overlay=dark]::before {
+  background-color: #000;
+}
+
+[data-overlay=theme]::before {
+  background-color: #f26522;
+}
+
+[data-opacity="1"]::before {
+  opacity: 0.1;
+}
+
+[data-opacity="2"]::before {
+  opacity: 0.2;
+}
+
+[data-opacity="3"]::before {
+  opacity: 0.3;
+}
+
+[data-opacity="4"]::before {
+  opacity: 0.4;
+}
+
+[data-opacity="5"]::before {
+  opacity: 0.5;
+}
+
+[data-opacity="6"]::before {
+  opacity: 0.6;
+}
+
+[data-opacity="7"]::before {
+  opacity: 0.7;
+}
+
+[data-opacity="8"]::before {
+  opacity: 0.8;
+}
+
+[data-opacity="9"]::before {
+  opacity: 0.9;
+}
+
+/*# sourceMappingURL=main.css.map */
